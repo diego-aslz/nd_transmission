@@ -1,4 +1,4 @@
-module Transmission
+module NdTransmission
   class Base
     attr_accessor :origin, :dest, :chunk_size
 

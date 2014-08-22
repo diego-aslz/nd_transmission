@@ -1,4 +1,4 @@
-require File.expand_path('../../lib/transmission', __FILE__)
+require File.expand_path('../../lib/nd_transmission', __FILE__)
 
 RSpec.configure do |config|
   config.order = "random"

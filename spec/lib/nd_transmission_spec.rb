@@ -16,19 +16,19 @@ class Dest
   end
 end
 
-describe Transmission::Base do
+describe NdTransmission::Base do
   before do
     Dest.received.clear
   end
 
   it "moves objects" do
-    Transmission::Base.new(Origin => Dest).transmit
+    NdTransmission::Base.new(Origin => Dest).transmit
     expect(Dest.received).to eq [[1], [2], [3]]
   end
 
   context 'a chunk size is given' do
     it "moves objects in chunks" do
-      Transmission::Base.new(Origin => Dest, chunk_size: 2).transmit
+      NdTransmission::Base.new(Origin => Dest, chunk_size: 2).transmit
       expect(Dest.received).to eq [[1, 2], [3]]
     end
   end
