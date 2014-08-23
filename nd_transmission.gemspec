@@ -6,7 +6,10 @@ Gem::Specification.new do |s|
   s.description = ""
   s.authors     = ["Diego Aguir Selzlein"]
   s.email       = 'diegoselzlein@gmail.com'
-  s.files       = ["lib/nd_transmission.rb"]
+
+  s.files         = `git ls-files`.split("\n")
+  s.require_paths = ["lib"]
+
   s.homepage    = 'https://github.com/nerde/nd_transmission'
   s.license     = 'MIT'
 end
