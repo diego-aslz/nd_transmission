@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'nd_transmission'
-  s.version     = '0.0.1'
-  s.date        = '2014-08-21'
+  s.version     = '0.0.2'
+  s.date        = '2014-09-12'
   s.summary     = "Remote objects synchronization."
   s.description = ""
   s.authors     = ["Diego Aguir Selzlein"]
